@@ -1,0 +1,181 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:600);
+
+html{
+  overflow-y: scroll;
+  scrollbar-color: #36373B rebeccapurple;
+  scrollbar-width: thin;
+}
+
+
+body::-webkit-scrollbar {
+
+	width: 8px;
+
+}
+
+::-webkit-scrollbar {
+ width: 8px;
+ height: 8px;
+}
+::-webkit-scrollbar-thumb {
+  background:linear-gradient(315deg, #20bf55 0%, #01baef 74%);
+ border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover{
+ background:linear-gradient(315deg, #20bf55 0%, #01baef 74%);
+}
+::-webkit-scrollbar-track{
+ background: #c6c6c78e;
+ border-radius: 3px;
+}
+
+.searchform .mini-widget-searchform{
+	
+	padding-left: 40px !important;
+}
+
+.item-1, 
+.item-2, 
+.item-3 {
+	position: absolute;
+  display: block;
+	font-size: 22px;
+  letter-spacing: 3px;
+  width:38%;
+  color: #011B8A;
+  text-shadow: 1px 1px 2px #000000;
+ 
+
+	animation-duration: 20s;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: infinite;
+}
+
+.item-1{
+	animation-name: anim-1;
+}
+
+.item-2{
+	animation-name: anim-2;
+}
+
+.item-3{
+	animation-name: anim-3;
+}
+
+@keyframes anim-1 {
+	0%, 8.3% { right: -100%; opacity: 0; }
+  8.3%,25% { right: 25%; opacity: 1; }
+  33.33%, 100% { right: 110%; opacity: 0; }
+}
+
+@keyframes anim-2 {
+	0%, 33.33% { right: -100%; opacity: 0; }
+  41.63%, 58.29% { right: 25%; opacity: 1; }
+  66.66%, 100% { right: 110%; opacity: 0; }
+}
+
+@keyframes anim-3 {
+	0%, 66.66% { right: -100%; opacity: 0; }
+  74.96%, 91.62% { right: 25%; opacity: 1; }
+  100% { right: 110%; opacity: 0; }
+}
+.forborder {
+  /* filter: url(filters.svg#grayscale); Firefox 3.5+ 
+    filter: gray; /* IE5+ */
+    filter: blur(2px);
+    -webkit-filter: blur(2px); /* Webkit Nightlies & Chrome Canary */
+    -webkit-transition: all .8s ease-in-out;  
+  }
+.transparent:hover{
+  outline: 1px solid rgb(255, 255, 255);
+  outline-offset: -14px;
+  filter: none;
+  -webkit-transform: scale(1.01);
+}
+
+
+.bg-text {
+ 
+  /*background-color: rgba(0,0,0, 0.4);
+  border: 2px solid #f1f1f1;  Black w/opacity/see-through */
+  color: white;
+  font-weight: bold;
+  
+  position: absolute;
+  text-align: center;
+}
+
+.tile:hover{
+  background-color :#20bf55;
+  background-image: linear-gradient(315deg, #20bf55 0%, #01baef 74%);
+}
+.transparent{
+  background-color: #ffffff; background-image: linear-gradient(315deg, #ffffff 0%, #d7e1ec 74%);
+  transition: all 0.4s ease;-webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;text-align: center;border-radius: 7px 7px 7px 7px;-moz-border-radius: 7px 7px 7px 7px;
+  -webkit-border-radius: 7px 7px 7px 7px;opacity: 0.7;
+  height: 250px;
+}
+.transparent:hover{
+  outline: 1px solid rgb(2, 2, 2);
+  outline-offset: -14px;
+  filter: none;
+  -webkit-transform: scale(1.01);
+}
+
+.logo-transparent{
+  background-color: #ffffff; 
+  /*background-image: linear-gradient(315deg, #ffffff 0%, #d7e1ec 74%);*/
+  transition: all 0.4s ease;-webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  text-align: center;
+  border-radius: 7px 7px 7px 7px;
+  -moz-border-radius: 7px 7px 7px 7px;
+  -webkit-border-radius: 7px 7px 7px 7px;
+  height:150px;
+  transition: transform .2s;
+}
+.logo-transparent:hover{
+  outline: 1px solid rgb(2, 2, 2);
+  outline-offset: -14px;
+  transform: scale(1.2); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+.india-svg path{
+  //fill: rgb(56 189 248);
+  //stroke:rgb(2 132 199);
+  stroke-width: .25;
+  transition: transform .2s;
+}
+.india-svg path:hover{
+  //fill: rgb(147 197 253);
+  transition: .6s;
+  cursor: pointer;
+  transform: scale(1.004);
+  opacity: 0.7;
+}
+
+
+  
+  .for-marquee{
+    text-shadow: 1px 1px 3px #33333380;
+    animation-direction:alternate-reverse;
+    font-family: 'Montserrat';
+}
+
+.for-marquee-text{
+  letter-spacing: 8px;
+  background-color: #000000;
+background-image: linear-gradient(147deg, #000000 0%, #434343 74%);
+  -webkit-background-clip: text;
+  /*-webkit-text-fill-color: transparent;*/
+  
+}
+.for-border:hover{
+  outline: 1px solid rgba(245, 245, 245,.5);
+  outline-offset: -14px;
+  filter: none;
+  -webkit-transform: scale(1.01);
+  
+  -webkit-transition: all .8s ease-in-out;  
+}
